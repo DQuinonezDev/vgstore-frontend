@@ -5,6 +5,8 @@ import { HomePage } from '../../pages/Home Page/HomePage'
 import { ProductInf } from '../../pages/Product Page/ProductInf'
 import { clientRoutes } from '../Auths/AuthRoutes'
 import { Cart } from '../../pages/Cart Page/Cart'
+import { AddressView } from '../../pages/Address page/components/AddressView'
+import { Invoice } from '../../pages/Invoice Page/components/Invoice'
 
 export const RouteApp = () => {
     return (
@@ -16,8 +18,10 @@ export const RouteApp = () => {
                 <Route path="/product/:id" element={<ProductInf />} />
 
 
-                {/* Client Routes Whit Token A falta de autontificacion */}
+                {/* Client Routes Whit Token */}
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/address" element={<AddressView />} />
+                <Route path="/invoice" element={<Invoice />} />
             </Routes>
         </>
     )

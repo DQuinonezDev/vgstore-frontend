@@ -74,6 +74,7 @@ export const Cart = () => {
                             </tbody>
                         </table>
                         <h3> Total: {cart.total}</h3>
+                        <a href={'/address'}>Confirmar compra</a>
                     </div>
                 </div>
             </div>
