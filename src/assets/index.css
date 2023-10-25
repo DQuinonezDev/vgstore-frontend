@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "regular";
+    src: url("./fonts/Fredoka-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "light";
+    src: url("./fonts/Fredoka-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "med";
+    src: url("./fonts/Fredoka-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "semibold";
+    src: url("./fonts/Fredoka-SemiBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

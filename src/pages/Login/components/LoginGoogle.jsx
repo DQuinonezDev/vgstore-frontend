@@ -6,16 +6,15 @@ import jwt_decode from 'jwt-decode';
 import { apiLoginGoogle } from '../api/apiLogin';
 
 export const Logingoogle = () => {
-    
+
     const responseGoogle = async (credentialResponse) => {
         try {
             const idToken = credentialResponse.credential;
             const decodedToken = jwt_decode(idToken);
 
-            const {email, family_name, given_name } = decodedToken;
+            const { email, family_name, given_name } = decodedToken;
 
             const backendResponse = await apiLoginGoogle(email, family_name, given_name);
-
             if (backendResponse) {
                 Swal.fire({
                     icon: 'success',
@@ -31,10 +30,9 @@ export const Logingoogle = () => {
 
     return (
         <div>
-            <h1>Login</h1>
-
             <GoogleOAuthProvider clientId="157317729776-eat6a5mbcdp5ktmigg61f8f719ippiin.apps.googleusercontent.com">
                 <GoogleLogin
+                    width={300}
                     onSuccess={responseGoogle}
                     onError={() => {
                         console.log('Login Failed');

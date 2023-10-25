@@ -11,12 +11,12 @@ export const apiLogin = async (mail, password) => {
         });
 
         const token = response.data.token;
-        const role = response.data.role;
+        // const role = response.data.role;
         console.log(response);
 
 
         token ? localStorage.setItem("token", token) : null;
-        token ? localStorage.setItem("role", role) : null;
+        // token ? localStorage.setItem("role", role) : null;
 
         return token;
 
