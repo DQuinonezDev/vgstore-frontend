@@ -11,12 +11,12 @@ export const apiLogin = async (mail, password) => {
         });
 
         const token = response.data.token;
-        // const role = response.data.role;
+        const role = response.data.role;
         console.log(response);
 
 
         token ? localStorage.setItem("token", token) : null;
-        // token ? localStorage.setItem("role", role) : null;
+        token ? localStorage.setItem("role", role) : null;
 
         return token;
 
@@ -53,6 +53,7 @@ export const apiLoginGoogle = async (email, family_name, given_name,) => {
         token ? localStorage.setItem('role', role) : null;
 
         return token;
+        
     } catch (error) {
         console.error('Error en el inicio de sesión con Google:', error);
         throw error;

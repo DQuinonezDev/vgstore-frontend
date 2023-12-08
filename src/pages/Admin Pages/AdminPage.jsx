@@ -1,10 +1,10 @@
 import React from 'react'
+import { SidebarAdmin } from './components/SidebarAdmin'
 
 export const AdminPage = () => {
     return (
         <>
-            <h1>Admin Page aqui</h1>
-
+            <SidebarAdmin />
         </>
     )
 }

@@ -42,7 +42,7 @@ export const Login = () => {
                             Inicia sesión con tu cuenta de&nbsp;
                         </div>
                         <div className="mr-4">
-                            <img src={IMGLOG} alt="Not Found" className="w-28" />
+                            <img src={IMGLOG} alt="Not Found" className="lg:w-28 w-24 lg:relative absolute top-52 lg:top-0" />
                         </div>
                     </div>
                     <div className="my-4 flex before:mt-0.5 before:flex-1 before:border-t before:border-black after:mt-0.5 after:flex-1 after:border-t after:border-black" />
@@ -51,7 +51,6 @@ export const Login = () => {
                     </div>
                     <form className="space-y-4 md:space-y-6 mt-8" onSubmit={handleSubmit}>
                         <div>
-                            {/* Block manda para abajo el input */}
                             <label
                                 htmlFor="email"
                                 className="block mb-2 text-sm font-customMed text-gray-900 " >

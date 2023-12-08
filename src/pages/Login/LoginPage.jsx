@@ -7,7 +7,6 @@ import { Footer } from '../../components/Footer/Footer'
 export const LoginPage = () => {
     return (
         <>
-            <Navbar />
             <div className="lg:flex lg:justify-center">
                 <div className="lg:w-1/2 mt-auto">
                     <Login />

@@ -23,6 +23,9 @@ export const Logingoogle = () => {
                     timer: 1500
                 });
             }
+            window.location.href = "/";
+
+
         } catch (error) {
             console.log(error);
         }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import VGStoreLogo from "../../assets/imgs/VGStoreWh.png";
+import { BtnCart } from '../Buttons/BtnCart';
+import { BtnProfile } from '../Buttons/BtnProfile';
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,10 +12,10 @@ export const Navbar = () => {
 
     return (
         <nav aria-label="Site Navbar">
-            <div className="border-b bg-[#733FFF]" >
+            <div className="border-b bg-[#723fffd8]" >
                 <div className="mx-auto max-w-screen-xl px-6 py-4 md:py-6">
-                    <div className="flex items-center justify-between gap-x-4" > 
-                        
+                    <div className="flex items-center justify-between gap-x-4" >
+
                         <a className="flex cursor-pointer items-center gap-x-1">
                             <img
                                 width="175"
@@ -23,8 +25,13 @@ export const Navbar = () => {
                             />
                         </a>
 
-                        <ul className="flex items-center gap-x-3">
-                            {/* Iconos */}
+                        <ul className="flex items-center gap-x-8">
+                            <li>
+                                <BtnCart />
+                            </li>
+                            <li>
+                                <BtnProfile />
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +55,7 @@ export const Navbar = () => {
                             <li className="flex items-center gap-x-4 md:hidden">
                                 <button
                                     onClick={toggleMenu}
-                                    className="block cursor-pointer p-2 text-sm font-medium hover:border-gray-900/70 hover:text-gray-900/70"
+                                    className="block cursor-pointer p-2 text-sm font-medium hover:border-white hover:text-white"
                                 >
                                     <svg
                                         aria-hidden="true"
